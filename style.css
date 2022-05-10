@@ -1,0 +1,94 @@
+*{
+    margin:0; padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background-color:rgb(83, 83, 255);
+    color:white;
+}
+/* title of the page (NOTES) */
+#title{
+    text-align:center;
+    font-weight:bold;
+    margin-top:40px;
+}
+#container{
+    width:80%; margin:20px auto;
+    display:flex; justify-content:space-around;
+    flex-wrap:wrap;
+}
+/* add a note */
+.plus{
+    width:280px;
+    height:300px;
+    transition:all 0.3s;
+}
+.plus button{
+    width:100%; height:100%;  font-size:80px;
+    background-color:white;
+    border:none; border-radius:10px;
+    color:blue;
+    cursor:pointer;
+    box-shadow:3px 3px 10px rgb(232, 231, 231);
+    border-right:1px solid rgb(235, 233, 233);
+    border-bottom:1px solid rgb(235, 233, 233);
+}
+.plus:hover{
+    transform:translateY(-16.5px);
+}
+.card{
+    width:280px;
+    height:300px;
+    transition:all 0.3s;
+    background:white;
+    margin:8px;
+    color:black;
+}
+.card:hover{
+    transform:translateY(-16.5px);
+}
+/* create a note */
+#form{
+    color:black; padding:20px;
+    width:300px; 
+    background-color:white;
+    border:none;
+    border-radius:10px;
+    box-shadow:3px 3px 10px rgb(232, 231, 231);
+    border-right:1px solid rgb(235, 233, 233);
+    border-bottom:1px solid rgb(235, 233, 233);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display:none;
+    z-index:2;
+}
+#text{
+    resize:none; height:240px;
+}
+.card2{
+    width:280px;
+    height:300px;
+    transition:all 0.3s;
+    background:white;
+    margin:14px;
+    color:black;
+    padding:15px;
+    text-align:center;
+    position: relative;
+}
+/* button supprimer */
+.supprimer{
+    position:absolute;
+    bottom:-5%;
+    left:50%;
+    right:50%;
+    transform:translateX(-50%);
+}
+/* afficher le text dans (textarea) */
+.textarea{
+    border:none; outline:none;
+    resize:none;
+    height:80%;
+}
